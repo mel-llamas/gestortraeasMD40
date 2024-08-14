@@ -5,7 +5,7 @@ let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 export const addTask = (task) => {
     const newtask = {
         id: Date.now(),
-        Text: task,
+        text: task,
         completed: false,
     };
     tasks.push(newtask);
@@ -13,4 +13,21 @@ export const addTask = (task) => {
 };
 
 // Función para poder traer la lista de tareas
-export const gettask = () => tasks;
+export const getTasks = () => tasks;
+
+//Funcion para eliminar una tarea de la lista
+export const deleteTask = (id) => {
+    tasks = tasks.filter((task) => task.id !== parseInt(id));
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+};
+
+//Funcion para actualizar una tarea
+export const updateTask = (id) => {
+    tasks = tasks.map((task) => {
+        if(task.id === parseInt(id)) {
+            task.completed = !task.completed;
+        }
+        return task;
+    });
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+};

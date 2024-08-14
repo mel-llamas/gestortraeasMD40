@@ -1,5 +1,5 @@
 /* Estilos generales */
-body{
+body {
     font-family: arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
@@ -11,15 +11,15 @@ body{
 }
 
 /* Estilos para el contenedor principal */
-#app{
+#app {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para el cormulario */
-form{
+/* Estilos para el formulario */
+form {
     display:flex;
     justify-content: space-between;
 }
@@ -34,7 +34,7 @@ input {
 }
 
 /* Estilos al boton */
-button{
+button {
     padding: 5px 8px;
     background-color: #007bff;
     color: white;
@@ -44,13 +44,13 @@ button{
 }
 
 /* Estilos para la lista */
-ul{
+ul {
     list-style: none;
     padding: 0%;
 }
 
 /* Estilos para el elemento de la lista */
-li{
+li {
     background-color: #f4f4f4;
     padding: 10px;
     border: 1px solid #ddd;
@@ -61,7 +61,7 @@ li{
 }
 
 /* Estilos para el elemento completado de la lista */
-li.completed{
+li.completed {
     text-decoration: line-through;
     color: #888;
 }
