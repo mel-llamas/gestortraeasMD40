@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
     //Agregar el evento para la funcion para agregar tareas
     document.getElementById( "task-form" ).addEventListener("submit", (e) => {
         e.preventDefault();
-        const taskinput = document.getElementById("task-input");
-        if(taskinput.value !=="") {
+        const taskInput = document.getElementById("task-input");
+        if(taskInput.value !== "") {
             //Agregamos la tarea
             addTask(taskInput.value);
 

@@ -158,8 +158,8 @@ document.addEventListener("DOMContentLoaded", function () {
   //Agregar el evento para la funcion para agregar tareas
   document.getElementById("task-form").addEventListener("submit", function (e) {
     e.preventDefault();
-    var taskinput = document.getElementById("task-input");
-    if (taskinput.value !== "") {
+    var taskInput = document.getElementById("task-input");
+    if (taskInput.value !== "") {
       //Agregamos la tarea
       (0,_task__WEBPACK_IMPORTED_MODULE_1__.addTask)(taskInput.value);
 

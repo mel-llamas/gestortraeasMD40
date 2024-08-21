@@ -1,7 +1,8 @@
 /* Estilos generales */
 body {
-    font-family: arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    background-image: url("../dist/imagenes/estaeslabuena.jpg");
+    background-size: auto;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -10,12 +11,16 @@ body {
     align-items: center;
 }
 
+
+
 /* Estilos para el contenedor principal */
 #app {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    background-color: rgb(237, 225, 115);
+    padding: 60px;
+    border: 3px solid #030000;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(165, 122, 122, 0.1);
 }
 
 /* Estilos para el formulario */
@@ -29,16 +34,16 @@ input {
     width: 75%;
     padding: 8px;
     margin-right: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #0f0101;
     border-radius: 3px;
 }
 
 /* Estilos al boton */
 button {
     padding: 5px 8px;
-    background-color: #007bff;
+    background-color: #ec2776;
     color: white;
-    border: none;
+    border: 1px solid color(srgb red green rgb(3, 3, 9));
     border-radius: 3px;
     cursor: pointer;
 }
@@ -51,9 +56,9 @@ ul {
 
 /* Estilos para el elemento de la lista */
 li {
-    background-color: #f4f4f4;
+    background-color: #eca0b1f5;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 2px solid #080101;
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
@@ -63,5 +68,5 @@ li {
 /* Estilos para el elemento completado de la lista */
 li.completed {
     text-decoration: line-through;
-    color: #888;
+    color: #ba1065;
 }
